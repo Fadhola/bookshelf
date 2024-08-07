@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Bookshelf</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="add-book-form">
+                <h2>Tambah Buku Baru</h2>
+                <input type="text" id="title" placeholder="Judul Buku">
+                <input type="text" id="author" placeholder="Penulis">
+                <input type="number" id="year" placeholder="Tahun Terbit">
+                <input type="checkbox" id="isComplete"> Selesai dibaca
+                <button id="add-button">Tambah</button>
+            </div>
+            <div class="bookshelves">
+                <div class="shelf" id="unread-shelf">
+                    <h2>Belum selesai dibaca</h2>
+                    <ul id="unread-list"></ul>
+                </div>
+                <div class="shelf" id="read-shelf">
+                    <h2>Selesai dibaca</h2>
+                    <ul id="read-list"></ul>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+    <footer class="footer">
+        &copy; Fadhol 2023 Bookshelf Apps
+    </footer>
+    <script src="script.js"></script>
+</html>
